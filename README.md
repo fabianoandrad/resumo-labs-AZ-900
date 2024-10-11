@@ -27,3 +27,11 @@
 * Imagem - Escolha o aplicativo ou sistema operacional base para a VM
 * Arquitetura de VM - 
 O Azure oferece uma opção de máquinas virtuais baseadas em x64 ou Arm64 para executar seus aplicativos.
+
+## Configurando uma instância de Banco de Dados na Azure
+* No menu lateral esquerdo acesse Bancos de dados SQL (irá abrir outra página) como imagem abaixo e clique em +Criar
+![](assets/003517.png)
+* Em assinatura mantenha a sua que já estará disponível
+* Crie um grupo de recurso (o mesmo da criação de VM)
+* Adicione um nome ao BD SQL
+* Selecione um servidor - um existente ou crie um servidor. A cadeia de conexão e as credenciais serão baseadas no servidor.
