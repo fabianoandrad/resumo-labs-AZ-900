@@ -68,3 +68,47 @@ O Azure oferece uma opção de máquinas virtuais baseadas em x64 ou Arm64 para 
 * Tudo feito vá no seu recurso criado e dentro dele já vai estar seu recurso de rede virtual criado, como na imagem abaixo.
 ![](assets/013632.png)
 
+## Configurando Recursos e Dimensionamentos em Máquinas Virtuais na Azure
+* Primeiro vamos criar uma VM seguindo os passos abaixo
+![](assets/225451.png)
+
+* Em assinatura irá ficar já predefinido com sua assinatura existente
+* No grupo de recurso selecionamos um grupo já criado "AZ-900_Lab_DIO"
+* Nome da máquina virtual por ex: "machine01"
+* Região podemos escolher a (US) East US 2
+* Em opções de disponibilidade deixamos como "Nenhuma redundância de infraestrutura necessário"
+* Em imagem selecionamos "Windows Server 2019 Datacenter - x64 Gen2"
+* Em tamanho vamos escolher a "Standard_DS1_v2 - 1 vcpu, 3.5 GiB memória (US$ 85,41/mês)" Obs: Selecione um tamanho de VM para dar suporte à carga de trabalho que você deseja executar. O tamanho escolhido determina fatores como capacidade de processamento, memória e capacidade de armazenamento.
+* Em Nome de Usuário coloque seu nome por exemplo e uma senha e confirme sua senha
+* Regras de portas de entrada vamos permitir portas e seleciona umas dela como por exemplo a RDP (3389) até mesmo pra ver que esta VM não esta seguindo boas praticas de seguraça
+* Em seguida clique em Avançar para discos
+#### Avançamos agora para discos
+* Selecione o tamanho do disco ou deixe o padrão de 127GiB
+* Selecione o tipo de disco como por exemplo o SSD
+* Check a opção de excluir com VM, para evitar de deixar disco em funcionamentos depois que excluir uma VM
+* Em seguida clique em Avançar para rede
+#### Avançamos agora para rede
+* Selecione uma rede virtual e sua sub rede
+* Selecione uma porta de entrada
+* habilite também para excluir a placa de rede com a VM, a ideia é excluir tudo com VM
+* Em seguida clique em Avançar para Gerenciamneto
+#### Avançamos para Gerenciamento
+* Deixe as opções Identitade Azure AD desabilitadas
+* Habilitamos o desligamento automatico e selecionamos um horário pra que o desligamento acontece.
+* Adicione um email para receber aviso que vai desligar sua VM
+* Habilitar backup obs: ponto interessante que hoje já podemos escolher o backup todos os dias.
+* Em seguida clique em Avançar para Monitoramento
+#### Avançamos para Monitoramentos
+* Habilitamos alertas
+* Em Diagnosticos deixamos desabilitado
+* Em seguida clique em Avançar para Avançados
+#### Avançamos para Avançados
+* Nesta aba a principio vamos deixar como esta
+* Em seguida clique em Avançar para Marcas
+#### Avançamos para as Marcas
+* Nesta aba a principio vamos deixar como esta
+* Em seguida clique em Revisar e criar
+* Dai ja temos uma ideia de preço e finalizamos a criação da VM
+* Veja abaixo uma ideia ja criada
+![](assets/001349.png)
+
