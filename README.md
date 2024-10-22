@@ -1,6 +1,6 @@
 # resumo-labs-AZ-900
 
-![](assets/2202518_37a7_2.jpg)
+![](assets/2202518.jpg)
 ### Resumo dos desafios de projetos do bootcamp Microsoft Azure Essentials
 
 * Necessario ter conta criada na plataforma Microsoft Azure
