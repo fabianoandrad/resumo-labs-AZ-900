@@ -112,3 +112,29 @@ O Azure oferece uma opção de máquinas virtuais baseadas em x64 ou Arm64 para 
 * Veja abaixo uma ideia ja criada
 ![](assets/001349.png)
 
+## Dominando o armazenamento na Azure
+### Vamos aqui criar uma conta de armazenamento
+* O nome da conta deve ter entre 3 a 24 caracteres e ser exclusivo globalmente
+![](assets/234117.png)
+* Selecione uma região tipo (US) East US
+* Selecione o desenpenho de acordo com o nivel da sua aplicação "Standard" ou "Premium [Saiba mais](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview#performance-tiers)
+*Selecione uma redundância LRS, GRS, ZRS ou GZRS 
+Os dados em sua conta de armazenamento do Azure sempre são replicados para garantir a durabilidade e a alta disponibilidade. Escolha uma estratégia de replicação que seja compatível com seus requisitos de durabilidade. Algumas configurações não podem ser alteradas depois que a conta de armazenamento foi criada.
+### Avançamos para tela de avançados
+* Neste passo vamos deixar com as configurações padrões e atentamos apenas no armazenamento de Blobs para fica comm "Quente"
+
+### Avançamospara Rede
+* Também deixamos como padrão como já vem selecionados
+
+### Avançamos para Proteção de dados
+*Nesta aba vamos deixar todos desmarcados por se tratar de um ambiente de teste 
+.
+
+### Avançamos para Criptografia
+* Nesta aba vamos deixar como está
+
+### Avançamos para Marcas
+* Nesta aba vamos deixar como está e clicamos em "criar" para concluir no ssa conta de armazenamento.
+ 
+ Abaixo temos um exemplo depois de finalizado.
+ ![](assets/223851.png)
